@@ -7,7 +7,7 @@ fn get_animation(index: usize) -> TextAnimation {
     match index {
         0 => TextAnimation::sine_wave(5., 1., 0., 0.5),
         1 => TextAnimation::box_wave(5., 0.5, 0., 0.25),
-        3 => TextAnimation::bump(-5. * Vec2::Y, 0, 10, 10.),
+        2 => TextAnimation::bump(-5. * Vec2::Y, 0, 10, 10.),
         _ => TextAnimation::new(|_, _, mut p: Vec2, t: f32| {
             let u = 0.4 * (p.y * t.sin() + p.x * (1. + t.sin()));
             p.x += u;
@@ -23,7 +23,7 @@ fn switch_animation(
     mut query: Query<&mut TextAnimation>,
 ) {
     if keys.just_pressed(KeyCode::Space) {
-        *index = (*index + 1) % 3;
+        *index = (*index + 1) % 4;
         for mut animation in query.iter_mut() {
             *animation = get_animation(*index);
         }
