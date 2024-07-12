@@ -3,7 +3,7 @@
 Basic animated text plugin for Bevy.
 
 ### Usage
-Add the `AnimatedTextPlugin` to your app and spawn an entity with a `TextAnimationBundle` and either a `TextBundle` or `Text2dBundle`:
+Add the `AnimatedTextPlugin` to your app and spawn an entity with a `TextAnimationBundle` together with either a `TextBundle` or `Text2dBundle`:
 ```
 use bevy::prelude::*;
 use bevy_animated_text::*;
