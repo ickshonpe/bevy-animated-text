@@ -4,8 +4,11 @@ version = "0.1.0"
 edition = "2021"
 keywords = ["bevy", "text"]
 license = "MIT OR Apache-2.0"
-description = "Simple animated text plugin"
+description = "Basic animated text plugin for Bevy"
 categories = ["game-development", "gui"]
+repository = "https://github.com/ickshonpe/bevy-animated-text"
+homepage = "https://github.com/ickshonpe/bevy-animated-text"
+readme = "README.md"
 
 [dependencies]
 bevy = "0.14"
