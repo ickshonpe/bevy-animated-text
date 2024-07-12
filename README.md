@@ -2,7 +2,7 @@
 
 Basic animated text plugin for Bevy.
 
-Unfortunately in order to work nicely with Bevy's exisiting text implementation it's limited to only animating glyph positions.
+Unfortunately in order to work nicely with Bevy's existing text implementation it's limited to only animating glyph positions.
 
 ### Examples
 * ```cargo run --example hello_world```
