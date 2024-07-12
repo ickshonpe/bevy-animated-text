@@ -136,6 +136,15 @@ impl TextAnimation {
     }
 }
 
+impl<A> From<A> for TextAnimation
+where
+    A: 'static + Send + Sync + Fn(usize, usize, Vec2, f32) -> Vec2,
+{
+    fn from(animator: A) -> Self {
+        TextAnimation::new(animator)
+    }
+}
+
 pub fn animate_text_system(
     time: Res<Time>,
     mut animated_text_query: Query<(
