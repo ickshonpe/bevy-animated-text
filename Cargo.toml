@@ -2,6 +2,14 @@
 name = "bevy-animated-text"
 version = "0.1.0"
 edition = "2021"
+keywords = ["bevy", "text"]
+license = "MIT OR Apache-2.0"
+description = "Simple animated text plugin"
+categories = ["game-development", "gui"]
 
 [dependencies]
-bevy = "*"
+bevy = "0.14"
+
+[features]
+default = ["bevy_ui"]
+bevy_ui = []
